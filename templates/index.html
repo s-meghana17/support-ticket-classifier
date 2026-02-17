@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support Ticket Classifier</title>
+</head>
+<body>
+    <h2>Customer Support Ticket Classifier</h2>
+
+    <form method="post">
+        <textarea name="ticket" rows="5" cols="60"
+        placeholder="Enter your support ticket here"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if category %}
+        <h3>Category: {{ category }}</h3>
+        <h3>Priority: {{ priority }}</h3>
+    {% endif %}
+</body>
+</html>
